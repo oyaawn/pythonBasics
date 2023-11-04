@@ -30,17 +30,17 @@ class linkedList: # linked list wrapper class
             elements.append(curNode.data)
         print(elements)
 
+    def get(self,index):
+        if index>=self.length():
+            print("ERROR: 'Get' index out of range!")
+            return None
+        currentIndex=0
+        currentNode=self.head
+        while True:
+            currentNode=currentNode.next
+            if currentIndex==index: return currentNode.data
+            currentIndex+=1
 
-
-print("Hello. Please enter how long you want your list to be:")
-
-x= int(input())
-for i in range(x):
-    print("Please enter the next element:")
-    y=[x]
-    input(y[i])
-    
-print(y)
 
 
 
