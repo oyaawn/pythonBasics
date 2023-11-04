@@ -29,4 +29,18 @@ class linkedList: # linked list wrapper class
             curNode=curNode.next
             elements.append(curNode.data)
         print(elements)
-        
+
+
+
+print("Hello. Please enter how long you want your list to be:")
+
+x= int(input())
+for i in range(x):
+    print("Please enter the next element:")
+    y=[x]
+    input(y[i])
+    
+print(y)
+
+
+
