@@ -11,6 +11,6 @@ courses.insert(0,'Art')
 
 
 courses2=['Education','Biology']
-courses.extend(0,courses2)
+courses.extend(courses2)
 
 print(courses)
