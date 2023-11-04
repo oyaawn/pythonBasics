@@ -1,3 +1,6 @@
-x= str(input("Enter a string: "))
-print (
+# lists
 
+courses=['History','Math','Physics','CompSci']
+print(len(courses))
+
+print(courses[-1])
