@@ -41,6 +41,35 @@ class linkedList: # linked list wrapper class
             if currentIndex==index: return currentNode.data
             currentIndex+=1
 
+    def erase(self,index):
+        if index>=self.length():
+            print("Error: 'Erase' index out of range!")
+            return None
+        currentIndex=0
+        currentNode=self.head
+        while True:
+            lastNode=currentNode
+            currentNode=currentNode.next
+            if currentIndex==index:
+                lastNode.next=currentNode.next
+                return
+            currentIndex+=1
+            
+
+myList=linkedList()
+
+myList.append(1)
+myList.append(2)
+myList.append(3)
+myList.append(4)
+myList.append(5)
+myList.display()
+
+ #print("element at 2nd index:",myList.get(2))
+myList.erase(1)
+myList.display()
+
+
 
 
 
