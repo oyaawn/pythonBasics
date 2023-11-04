@@ -8,9 +8,10 @@ print(courses[0:2])
 print(courses[:2])
 courses.append('Chemistry')
 courses.insert(0,'Art')
-courses.extend(0,courses2)
+
 
 courses2=['Education','Biology']
+courses.extend(0,courses2)
  
 courses.insert(0,courses2)
 
