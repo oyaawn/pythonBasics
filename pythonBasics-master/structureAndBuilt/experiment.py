@@ -19,4 +19,8 @@ courses.reverse()
 
 num= [1,5,2,4,3]
 
-num.sort()
+num.sort(reverse=True)
+
+sortedCourses=sorted(courses)
+print(sortedCourses)
+print(num)
