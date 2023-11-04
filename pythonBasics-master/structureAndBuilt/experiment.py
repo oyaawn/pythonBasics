@@ -24,3 +24,5 @@ num.sort(reverse=True)
 sortedCourses=sorted(courses)
 print(sortedCourses)
 print(num)
+
+print(sum(num))
