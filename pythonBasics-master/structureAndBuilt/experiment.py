@@ -12,3 +12,5 @@ courses.insert(0,'Art')
 courses2=['Education','Biology']
  
 courses.insert(0,courses2)
+
+print(courses)
