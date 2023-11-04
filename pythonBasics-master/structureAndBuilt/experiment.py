@@ -34,3 +34,7 @@ for item in courses:
     if item=='CompSci':
         print('Found!')
         break
+
+
+for index, item in enumerate(courses):
+    print(index,item)    
