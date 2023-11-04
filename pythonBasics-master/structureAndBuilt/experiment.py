@@ -31,4 +31,6 @@ print(courses.index('CompSci'))
 print ('polSc' in courses)
 
 for item in courses:
-    print(item)
+    if item=='CompSci':
+        print('Found!')
+        break
