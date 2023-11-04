@@ -14,3 +14,5 @@ courses2=['Education','Biology']
 courses.extend(courses2)
 
 print(courses)
+courses.remove('Math')
+courses.reverse()
