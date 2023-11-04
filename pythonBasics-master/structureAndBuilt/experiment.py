@@ -7,4 +7,4 @@ print(courses[-1])
 print(courses[0:2])
 print(courses[:2])
 courses.append('Chemistry')
-course
+courses.insert(0,'Art')
