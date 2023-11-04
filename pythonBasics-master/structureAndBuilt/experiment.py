@@ -29,3 +29,6 @@ print(sum(num))
 print(courses.index('CompSci'))
 
 print ('polSc' in courses)
+
+for item in courses:
+    print(item)
