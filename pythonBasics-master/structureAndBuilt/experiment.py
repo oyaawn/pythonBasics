@@ -26,3 +26,4 @@ print(sortedCourses)
 print(num)
 
 print(sum(num))
+print(courses.index('CompSci'))
