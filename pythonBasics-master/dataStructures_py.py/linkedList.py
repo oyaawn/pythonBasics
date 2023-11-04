@@ -21,3 +21,12 @@ class linkedList: # linked list wrapper class
             total+=1
             cur=cur.next
         return total
+    
+    def display(self):
+        elements= []
+        curNode= self.head
+        while curNode.next!= None:
+            curNode=curNode.next
+            elements.append(curNode.data)
+        print(elements)
+        
