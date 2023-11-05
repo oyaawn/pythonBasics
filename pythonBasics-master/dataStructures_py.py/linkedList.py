@@ -8,11 +8,11 @@ class linkedList: # linked list wrapper class
         self.head = node()
 
     def append(self,data):
-        new_node = node(data)
+        newNode = node(data)
         cur = self.head
         while cur.next != None:
             cur = cur.next
-        cur.next = new_node
+        cur.next = newNode
 
     def length(self):
         cur=self.head
@@ -54,6 +54,19 @@ class linkedList: # linked list wrapper class
                 lastNode.next=curNode.next
                 return
             curIndex+=1
+
+    def insertAfterData(self,data,newData):
+        newNode=node(newData)
+        cur=self.head
+        while cur.next!=None:
+            cur=cur.next
+            if cur.data==data:
+                newNode.next=cur.next
+                cur.next=newNode
+                return
+            
+    
+
             
 
 myList=linkedList()
