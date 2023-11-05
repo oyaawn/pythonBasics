@@ -41,7 +41,7 @@ class linkedList: # linked list wrapper class
             if curIndex==index: return curNode.data
             curIndex+=1
 
-    def erase(self,index):
+    def eraseByIndex(self,index):
         if index>=self.length():
             print("Error: 'Erase' index out of range!")
             return None
@@ -64,7 +64,15 @@ class linkedList: # linked list wrapper class
                 newNode.next=cur.next
                 cur.next=newNode
                 return
-            
+    
+    def eraseByData(self,data):
+        cur=self.head
+        while cur.next!= None:
+            lastNode=cur
+            cur=cur.next
+            if cur.data==data:
+                lastNode.next=cur.next
+                return
     
 
             
