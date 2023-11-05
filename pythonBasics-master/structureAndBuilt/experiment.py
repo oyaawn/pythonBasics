@@ -38,3 +38,23 @@ for item in courses:
 
 for index, item in enumerate(courses):
     print(index,item)    
+
+
+
+class node:
+    def __init__(self,data=None):
+        self.data=data
+        self.Node=None
+
+class linkedList:
+    def __init__(self):
+        self.head=node()
+
+    def append(self,data):
+        newNode= node(data)
+        currentNode=self.head
+        while currentNode.next!=None:
+            currentNode=currentNode.next
+            currentNode.next=newNode
+        
+    

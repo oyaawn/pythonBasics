@@ -34,26 +34,26 @@ class linkedList: # linked list wrapper class
         if index>=self.length():
             print("ERROR: 'Get' index out of range!")
             return None
-        currentIndex=0
-        currentNode=self.head
+        curIndex=0
+        curNode=self.head
         while True:
-            currentNode=currentNode.next
-            if currentIndex==index: return currentNode.data
-            currentIndex+=1
+            curNode=curNode.next
+            if curIndex==index: return curNode.data
+            curIndex+=1
 
     def erase(self,index):
         if index>=self.length():
             print("Error: 'Erase' index out of range!")
             return None
-        currentIndex=0
-        currentNode=self.head
+        curIndex=0
+        curNode=self.head
         while True:
-            lastNode=currentNode
-            currentNode=currentNode.next
-            if currentIndex==index:
-                lastNode.next=currentNode.next
+            lastNode=curNode
+            curNode=curNode.next
+            if curIndex==index:
+                lastNode.next=curNode.next
                 return
-            currentIndex+=1
+            curIndex+=1
             
 
 myList=linkedList()
