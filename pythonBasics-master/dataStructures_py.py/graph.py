@@ -32,7 +32,7 @@ class Graph:
             print(node, ":", self.graph[node])
 
 
-    def bfsNonWeighted(self,start):
+    def bfs(self,start):
         visited={}
         queue=[]
         queue.append(start)
@@ -46,6 +46,8 @@ class Graph:
                     queue.append(node)
                     visited[node]=True
         print(visitedNodes)
+
+    def dfs
 
     
 
