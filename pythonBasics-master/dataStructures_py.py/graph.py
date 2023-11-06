@@ -32,19 +32,22 @@ class Graph:
             print(node, ":", self.graph[node])
 
 
-    def bfs(self,start):
+    def bfsNonWeighted(self,start):
         visited={}
         queue=[]
         queue.append(start)
         visited[start]=True
+        visitedNodes = []
         while queue:
             cur=queue.pop(0)
-            print(cur)
-            for node in self.graph(cur):
+            visitedNodes.append(cur)
+            for node in self.graph[cur]:
                 if node not in visited:
                     queue.append(node)
                     visited[node]=True
+        print(visitedNodes)
 
+        
          
 
 g=Graph()
