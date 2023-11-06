@@ -1,5 +1,5 @@
 class Graph:
-    def __init__(self, node1, node2):
+    def __init__(self):
         self.graph={}
 
     def addNode(self,node):
