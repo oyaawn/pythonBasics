@@ -30,4 +30,9 @@ class Graph:
     def printGraph(self):
         for node in self.graph:
             print(node, ":", self.graph[node])
-            
+
+g=Graph()
+g.addEdgeWeight('A', 'B', 1)
+g.addEdgeWeight('A', 'C', 2)
+g.printGraph()
+
