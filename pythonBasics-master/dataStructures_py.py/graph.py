@@ -45,17 +45,40 @@ class Graph:
                 if node not in visited:
                     queue.append(node)
                     visited[node]=True
-        print(visitedNodes)
+        return visitedNodes
 
-    def dfs
+    def dfs(self,start):
+        visited={}
+        stack=[]
+        stack.append(start)
+        visited[start]=True
+        visitedNodes=[]
+        while stack:
+            cur=stack.pop()
+            visitedNodes.append(cur)
+            for node in self.graph[cur]:
+                if node not in visited:
+                    stack.append(node)
+                    visited[node]=True
+        return visitedNodes
 
-    
-
-        
-         
+    def printMenu(self):
+        print("Please select a traversal method:")
+        print("1. BFS")
+        print("2. DFS")
+        choice = input("Enter your choice (1 or 2): ")
+        if choice == "1":
+            start = input("Enter the starting node: ")
+            print("BFS traversal:", self.bfs(start))
+        elif choice == "2":
+            start = input("Enter the starting node: ")
+            print("DFS traversal:", self.dfs(start))
+        else:
+            print("Invalid choice")
 
 g=Graph()
 g.addEdgeWeight('A', 'B', 1)
 g.addEdgeWeight('A', 'C', 2)
 g.printGraph()
+g.printMenu()
 
