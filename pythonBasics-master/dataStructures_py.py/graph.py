@@ -31,6 +31,22 @@ class Graph:
         for node in self.graph:
             print(node, ":", self.graph[node])
 
+
+    def bfs(self,start):
+        visited={}
+        queue=[]
+        queue.append(start)
+        visited[start]=True
+        while queue:
+            cur=queue.pop(0)
+            print(cur)
+            for node in self.graph(cur):
+                if node not in visited:
+                    queue.append(node)
+                    visited[node]=True
+
+         
+
 g=Graph()
 g.addEdgeWeight('A', 'B', 1)
 g.addEdgeWeight('A', 'C', 2)
