@@ -82,3 +82,5 @@ g.addEdgeWeight('A', 'C', 2)
 g.printGraph()
 g.printMenu()
 
+#try hyperGraphs
+
