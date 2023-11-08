@@ -74,7 +74,7 @@ class Graph:
             start = input("Enter the starting node: ")
             print("DFS traversal:", self.dfs(start))
         else:
-            print("Invalid choice")
+            print("Invalid choice?")
 
 g=Graph()
 g.addEdgeWeight('A', 'B', 1)
@@ -83,4 +83,5 @@ g.printGraph()
 g.printMenu()
 
 #try hyperGraphs
+
 
