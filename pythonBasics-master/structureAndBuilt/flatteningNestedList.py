@@ -9,4 +9,4 @@ def listFlat(damn, record):
             record.append(i)
     return record
 
-print(listFlat(damn, record))
+print(listFlat(damn, record)) 
