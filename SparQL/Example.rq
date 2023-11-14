@@ -1,0 +1,8 @@
+#Example 3.4: Find up to ten people whose daughter is a professor:
+
+PREFIX eg: <http://example.org/>
+SELECT ?parent
+WHERE{
+    ?parent eg:hasDaughter ?daughter .
+    ?daughter eg:isProfessor eg:Professor .
+} LIMIT 10 
